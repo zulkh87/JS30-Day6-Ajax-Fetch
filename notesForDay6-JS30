@@ -1,0 +1,106 @@
+fetch returns a promise (probably; it could just be a "thenable"*). A promise is something that will be either resolved or rejected at a later point in time (typically**). then is used to hook up a handler that will be called when the promise is resolved (and optionally when it's rejected, if you pass a second function into then; otherwise you'd use catch).
+
+...
+
+JSON stands for JavaScript Object Notation
+
+JSON is a lightweight format for storing and transporting data
+
+JSON is often used when data is sent from a server to a web page
+
+JSON is "self-describing" and easy to understand
+
+...
+
+we retrieve the response as JSON using the json() function of the Response object.
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+
+...
+
+The push() method adds new items to the end of an array.
+
+The push() method changes the length of the array.
+
+The push() method returns the new length.
+
+https://www.w3schools.com/jsref/jsref_push.asp
+...
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+...
+
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+...
+
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+...
+
+The match() method matches a string against a regular expression **
+
+The match() method returns an array with the matches.
+
+The match() method returns null if no match is found.
+Note
+
+** If the search value is a string, it is converted to a regular expression.
+
+...
+
+https://www.w3schools.com/js/js_this.asp
+
+...
+
+https://www.w3schools.com/jsref/prop_text_value.asp
+
+...
+
+https://www.w3schools.com/jsref/jsref_replace.asp
+
+...
+
+https://www.w3schools.com/jsref/jsref_map.asp
+
+...
+
+https://www.w3schools.com/jsref/jsref_join.asp
+
+...
+
+The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+
+...
+
+1-innerHtml
+
+    sets all the html content inside the tag
+    returns all the html content inside the tag
+    includes styling + whitespaces
+
+2-innerText
+
+    sets all the content inside the tag (with tag wise line breaks)
+    returns all html content inside the tag (with tag wise line breaks)
+    ignores tags (shows only text)
+    ignores styling + whitespaces
+    if we have style:"visibility:hidden;" inside tag |_ innerText includes the styling -> hides content
+
+3-textContent
+
+    sets all the content inside the tag (no tag wise line breaks)
+    returns all content inside the tag (no tag wise line breaks)
+    includes whitespaces
+    if we have style:"visibility:hidden;" inside tag |_ textContent ignores the styling -> shows content
+    textContent has better performance because its value is not parsed as HTML.
+
+...
